@@ -1,0 +1,739 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="./output/tailwind.css" rel="stylesheet">
+</head>
+
+<body>
+    <div>
+
+        <!-- Navbar -->
+        <div class="ud-header bg-gray-200 absolute  top-0  left-0  z-40 w-full flex items-center">
+            <div class="container">
+                <div class="flex -mx-4 items-center justify-between relative">
+                    <div class="px-4 w-60 max-w-full">
+                        <a href="index.html" class="navbar-logo w-full block py-5">
+                            <img src="./images/logo.png" alt="logo" class="w-full header-logo" />
+                        </a>
+                    </div>
+                    <div class="flex px-2 justify-between items-center w-full">
+                        <div>
+                            <button id="navbarToggler"
+                                class="block absolute right-4 top-1/2 -translate-y-1/2 px-3 lg:hidden focus:ring-2 ring-primary py-[6px]  rounded-lg">
+
+                                <i class="fa text-4xl fa-navicon text-gray-500"></i>
+                            </button>
+                            <nav id="navbarCollapse"
+                                class=" absolute  py-5 lg:py-0 lg:px-4 xl:px-6 bg-white lg:bg-transparent shadow-lg rounded-lg max-w-[250px] w-full lg:max-w-full lg:w-full right-4 top-full hidden lg:block lg:static lg:shadow-none ">
+                                <ul class="blcok lg:flex">
+                                    <li class="relative group submenu-item">
+                                        <a href="#home"
+                                            class=" ud-menu-scroll text-base text-dark lg:group-hover:opacity-70  font-semibold group-hover:text-gray-900 lg:py-6 lg:inline-flex lg:px-0 flex mx-8 lg:mr-0 ">
+                                            <i class="fa fa-home text-lg mr-1 text-gray-600 "></i>
+                                            Drawing
+                                            Store <i class="fa fa-arrow-down text-gray-600 m-2"></i>
+                                        </a>
+                                        <div
+                                            class=" submenu  hidden relative lg:absolute w-[300px] top-full lg:top-[110%] left-0 rounded-sm lg:shadow-lg p-4 lg:block lg:opacity-0 lg:invisible group-hover:opacity-100 lg:group-hover:visible lg:group-hover:top-full bg-white transition-[top] duration-300 ">
+                                            <div>
+                                                <div class="text-center hover:bg-gray-200">
+                                                    <a href="#" class="text-base text-center font-semibold">
+                                                        <i class="fa fa-home text-gray-600 mx-2 py-2"></i> All
+                                                        Drawings<a />
+                                                </div>
+
+                                                <hr>
+                                                <div class="flex">
+                                                    <div>
+                                                        <a href="about.html"
+                                                            class="block text-base hover:bg-gray-200 font-semibold text-body-color rounded  hover:text-primary py-[10px] px-4">
+                                                            About Page
+                                                        </a>
+                                                        <a href="pricing.html"
+                                                            class="block text-base font-semibold text-body-color hover:bg-gray-200 rounded  hover:text-primary py-[10px] px-4">
+                                                            Pricing Page
+                                                        </a>
+                                                    </div>
+                                                    <div>
+                                                        <a href="about.html"
+                                                            class="block text-base font-semibold text-body-color hover:bg-gray-200 rounded  hover:text-primary py-[10px] px-4">
+                                                            About Page
+                                                        </a>
+                                                        <a href="pricing.html"
+                                                            class="block text-base font-semibold text-body-color hover:bg-gray-200 rounded  hover:text-primary py-[10px] px-4">
+                                                            Pricing Page
+                                                        </a>
+
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <div class="text-center hover:bg-gray-200">
+                                                    <a href="#" class="text-base text-center font-semibold">
+                                                        <i class="fa fa-home text-gray-600 mx-2 py-2"></i> All
+                                                        Drawings<a />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="relative group group inline-block">
+                                        <a href="#home"
+                                            class=" ud-menu-scroll text-base text-dark lg:group-hover:opacity-70  font-semibold group-hover:text-gray-900 lg:py-6 lg:inline-flex lg:px-0 flex mx-8 lg:mr-0 ">
+                                            Drawing Store <i class="fa fa-arrow-down text-gray-600 mx-2 py-2"></i>
+                                        </a>
+                                        <div
+                                            class=" submenu  hidden relative lg:absolute w-[250px] top-full lg:top-[110%] left-0 rounded-sm lg:shadow-lg p-4 lg:block lg:opacity-0 lg:invisible group-hover:opacity-100 lg:group-hover:visible lg:group-hover:top-full bg-white transition-[top] duration-300 ">
+                                            <div>
+
+                                                <div>
+                                                    <a href="#"
+                                                        class="block text-base font-semibold text-body-color hover:bg-gray-200 rounded  hover:text-primary py-[10px] px-4">
+                                                        <i class="fa fa-home text-gray-600 mx-2 py-2"></i> All
+                                                        Drawings<a />
+                                                </div>
+                                                <hr>
+                                                <div>
+                                                    <a href="about.html"
+                                                        class="block text-base font-semibold text-body-color rounded  hover:text-primary py-[10px] px-4">
+                                                        <i class="fa fa-home text-gray-600 mx-2 py-2"></i> About Page
+                                                    </a>
+                                                    <a href="pricing.html"
+                                                        class="block text-base font-semibold text-body-color rounded  hover:text-primary py-[10px] px-4">
+                                                        <i class="fa fa-home text-gray-600 mx-2 py-2"></i> Pricing Page
+                                                    </a>
+                                                </div>
+
+
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="relative group">
+                                        <a href="#home"
+                                            class=" ud-menu-scroll text-base text-dark lg:group-hover:opacity-70  font-semibold group-hover:text-gray-900 lg:py-6 lg:inline-flex lg:px-0 flex mx-8 lg:mr-0 ">
+                                            Drawing Store <i class="fa fa-arrow-down text-gray-600 mx-2 py-2"></i>
+                                        </a>
+                                        <div
+                                            class=" submenu  hidden relative lg:absolute w-[250px] top-full lg:top-[110%] left-0 rounded-sm lg:shadow-lg p-4 lg:block lg:opacity-0 lg:invisible group-hover:opacity-100 lg:group-hover:visible lg:group-hover:top-full bg-white transition-[top] duration-300 ">
+                                            <div>
+
+                                                <div>
+                                                    <a href="#"
+                                                        class="block text-base font-semibold text-body-color rounded  hover:text-primary py-[10px] px-4">
+                                                        <i class="fa fa-home text-gray-600 mx-2 py-2"></i> All
+                                                        Drawings<a />
+                                                </div>
+                                                <hr>
+                                                <div>
+                                                    <a href="about.html"
+                                                        class="block text-base font-semibold text-body-color rounded  hover:text-primary py-[10px] px-4">
+                                                        <i class="fa fa-home text-gray-600 mx-2 py-2"></i> About Page
+                                                    </a>
+                                                    <a href="pricing.html"
+                                                        class="block text-base font-semibold text-body-color rounded  hover:text-primary py-[10px] px-4">
+                                                        <i class="fa fa-home text-gray-600 mx-2 py-2"></i> Pricing Page
+                                                    </a>
+                                                </div>
+
+
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="relative group">
+                                        <a href="#contact"
+                                            class="ud-menu-scroll text-base text-dark  lg:group-hover:opacity-70 group-hover:text-gray-900 py-2 lg:py-6 lg:inline-flex lg:px-0 flex mx-8 lg:mr-0 lg:ml-7 xl:ml-12 font-semibold">
+                                            Videos
+                                        </a>
+                                    </li>
+                                    <li class="relative group">
+                                        <a href="#contact"
+                                            class="ud-menu-scroll text-base text-dark  lg:group-hover:opacity-70 group-hover:text-gray-900 py-2 lg:py-6 lg:inline-flex lg:px-0 flex mx-8 lg:mr-0 lg:ml-7 xl:ml-12 font-semibold">
+                                            Build Your Portfolio
+                                        </a>
+                                    </li>
+                                    <li class="relative group group inline-block">
+                                        <a href="#home"
+                                            class=" ud-menu-scroll text-base text-dark lg:group-hover:opacity-70  font-semibold group-hover:text-gray-900 lg:py-6 lg:inline-flex lg:px-0 flex mx-8 lg:mr-0 ">
+                                            Signup <i class="fa fa-arrow-down text-gray-600 mx-2 py-2"></i>
+                                        </a>
+                                        <div
+                                            class=" submenu  hidden relative lg:absolute w-[250px] top-full lg:top-[110%] left-0 rounded-sm lg:shadow-lg p-4 lg:block lg:opacity-0 lg:invisible group-hover:opacity-100 lg:group-hover:visible lg:group-hover:top-full bg-white transition-[top] duration-300 ">
+                                            <div>
+                                                <div>
+                                                    <a href="about.html"
+                                                        class="block text-base font-semibold text-body-color rounded  hover:text-primary py-[10px] px-4">
+                                                        <i class="fa fa-home text-gray-600 mx-2 py-2"></i> Login
+                                                    </a>
+                                                    <a href="pricing.html"
+                                                        class="block text-base font-semibold text-body-color rounded  hover:text-primary py-[10px] px-4">
+                                                        <i class="fa fa-home text-gray-600 mx-2 py-2"></i> Signup
+                                                    </a>
+                                                </div>
+
+
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="sm:flex justify-end alig hidden pr-16 lg:pr-0">
+                            <ul>
+
+                                <li class="relative  group group inline-block">
+                                    <input type="text"
+                                        class="bg-none mt-2 border   text-gray-900 text-sm rounded-lg  block w-full p-2"
+                                        placeholder="Search">
+                                    <button
+                                        class="border border-successHover bg-white px-6 hover:text-white transition py-2 rounded-lg hover:bg-successHover">Search</button>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Products -->
+        <div class="py-5 mt-24 md:px-8 lg:px-10 text-center">
+            <h1 class="text-center text-3xl font-bold">Products</h1>
+            <p class="text-center my-3">Browse through awesome drawings and design inspirations. And, dont forget to
+                watch our viral videos.</p>
+            <div class="flex  flex-wrap m-3">
+                <div class="w-full sm:w-1/2 md:w-1/3 flex flex-col p-3">
+                    <div class="bg-white overflow-hidden flex-1 flex flex-col">
+                        <div class="p-4 flex-1 flex flex-col text-center">
+                            <div>
+                                <i class="fa text-5xl fa-home text-gray-500"></i>
+                                <i class="fa text-5xl fa-home text-gray-500"></i>
+                                <i class="fa text-5xl fa-home text-gray-500"></i>
+                                <i class="fa text-5xl fa-home text-gray-500"></i>
+                            </div>
+                            <h3 class="mb-4 text-2xl">Download Autocad Drawings</h3>
+                            <div class="mb-4 text-grey-darker text-sm flex-1">
+                                <p>Download a wide collection of Drawings made in Autocad, 3D Max, Sketchup, Photoshop
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full sm:w-1/2 md:w-1/3 flex flex-col p-3">
+                    <div class="bg-white overflow-hidden flex-1 flex flex-col">
+                        <div class="p-4 flex-1 flex flex-col text-center">
+                            <div>
+                                <i class="fa text-5xl fa-youtube-play text-red-500 "></i>
+                            </div>
+                            <h3 class="mb-4 text-2xl">Learn from Awesome Videos</h3>
+                            <div class="mb-4 text-grey-darker text-sm flex-1">
+                                <p>Explore our official youtube channel, with over 125K subscribers
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full sm:w-1/2 md:w-1/3 flex flex-col p-3">
+                    <div class="bg-white overflow-hidden flex-1 flex flex-col">
+                        <div class="p-4 flex-1 flex flex-col text-center">
+                            <div>
+                                <i class="fa text-5xl fa-home text-gray-500"></i>
+                                <i class="fa text-5xl fa-home text-gray-500"></i>
+                                <i class="fa text-5xl fa-home text-gray-500"></i>
+                                <i class="fa text-5xl fa-home text-gray-500"></i>
+                            </div>
+                            <h3 class="mb-4 text-2xl">Get Design Inspirations</h3>
+                            <div class="mb-4 text-grey-darker text-sm flex-1">
+                                <p>Engage with fresh ideas, Discover design ideas. Browse over thousands of design
+                                    inspiration ideas
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <button
+                class="bg-success my-5 hover:bg-successHover text-white font-semibold py-3 px-12 transition rounded">
+                Get Started
+            </button>
+        </div>
+
+
+        <!-- Categories -->
+        <div class="bg-gray-100 mx-auto px-10 py-4">
+            <div class="text-center py-5">
+                <i class="fa text-8xl fa-heart text-red-500"></i>
+                <h4 class="text-3xl">Browse professional drawings in beautifully crafted categories</h4>
+            </div>
+            <div class="flex flex-wrap m-3">
+                <div class="w-full border rounded p-2 sm:w-1/2 md:w-1/3">
+                    <div class="flex">
+                        <div>
+                            <i class="fa text-4xl text-success fa-home mx-2"></i>
+                        </div>
+                        <div>
+                            <div> <a href=""
+                                    class="text-3xl font-semibold text-blue-600 hover:text-blue-800">Furniture</a>
+                            </div>
+                            <div>
+                                <a href="" class="text-blue-600">Bar Counter</a>,
+                                <a href="" class="text-blue-600">Bar Counter</a>,
+                                <a href="" class="text-blue-600">Bar Counter</a>,
+                                <a href="" class="text-blue-600">Bar Counter</a>,
+                                <a href="" class="text-blue-600">Bar Counter</a>,
+                                <a href="" class="text-blue-600">Bar Counter</a>,
+                                <a href="" class="text-blue-600">Bar Counter</a>,
+                                <a href="" class="text-blue-600">Bar Counter</a>,
+                                <a href="" class="text-blue-600">Bar Counter</a>,
+                                <a href="" class="text-blue-600">Bar Counter</a>,
+                                <a href="" class="text-blue-600">Bar Counter</a>,
+                                <a href="" class="text-blue-600">Bar Counter</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full border rounded p-2 sm:w-1/2 md:w-1/3">
+                    <div class="flex">
+                        <div>
+                            <i class="fa text-4xl text-success fa-home mx-2"></i>
+                        </div>
+                        <div>
+                            <div> <a href=""
+                                    class="text-3xl font-semibold text-blue-600 hover:text-blue-800">Furniture</a>
+                            </div>
+                            <div>
+                                <a href="" class="text-blue-600">Bar Counter</a>,
+                                <a href="" class="text-blue-600">Bar Counter</a>,
+                                <a href="" class="text-blue-600">Bar Counter</a>,
+                                <a href="" class="text-blue-600">Bar Counter</a>,
+                                <a href="" class="text-blue-600">Bar Counter</a>,
+                                <a href="" class="text-blue-600">Bar Counter</a>,
+                                <a href="" class="text-blue-600">Bar Counter</a>,
+                                <a href="" class="text-blue-600">Bar Counter</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full border rounded p-2 sm:w-1/2 md:w-1/3">
+                    <div class="flex">
+                        <div>
+                            <i class="fa text-4xl text-success fa-home mx-2"></i>
+                        </div>
+                        <div>
+                            <div> <a href=""
+                                    class="text-3xl font-semibold text-blue-600 hover:text-blue-800">Furniture</a>
+                            </div>
+                            <div>
+                                <a href="" class="text-blue-600">Bar Counter</a>,
+                                <a href="" class="text-blue-600">Bar Counter</a>,
+                                <a href="" class="text-blue-600">Bar Counter</a>,
+                                <a href="" class="text-blue-600">Bar Counter</a>,
+                                <a href="" class="text-blue-600">Bar Counter</a>,
+                                <a href="" class="text-blue-600">Bar Counter</a>,
+                                <a href="" class="text-blue-600">Bar Counter</a>,
+                                <a href="" class="text-blue-600">Bar Counter</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full border rounded p-2 sm:w-1/2 md:w-1/3">
+                    <div class="flex">
+                        <div>
+                            <i class="fa text-4xl text-success fa-home mx-2"></i>
+                        </div>
+                        <div>
+                            <div> <a href=""
+                                    class="text-3xl font-semibold text-blue-600 hover:text-blue-800">Furniture</a>
+                            </div>
+                            <div>
+                                <a href="" class="text-blue-600">Bar Counter</a>,
+                                <a href="" class="text-blue-600">Bar Counter</a>,
+                                <a href="" class="text-blue-600">Bar Counter</a>,
+                                <a href="" class="text-blue-600">Bar Counter</a>,
+                                <a href="" class="text-blue-600">Bar Counter</a>,
+                                <a href="" class="text-blue-600">Bar Counter</a>,
+                                <a href="" class="text-blue-600">Bar Counter</a>,
+                                <a href="" class="text-blue-600">Bar Counter</a>,
+                                <a href="" class="text-blue-600">Bar Counter</a>,
+                                <a href="" class="text-blue-600">Bar Counter</a>,
+                                <a href="" class="text-blue-600">Bar Counter</a>,
+                                <a href="" class="text-blue-600">Bar Counter</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full border rounded p-2 sm:w-1/2 md:w-1/3">
+                    <div class="flex">
+                        <div>
+                            <i class="fa text-4xl text-success fa-home mx-2"></i>
+                        </div>
+                        <div>
+                            <div> <a href=""
+                                    class="text-3xl font-semibold text-blue-600 hover:text-blue-800">Furniture</a>
+                            </div>
+                            <div>
+                                <a href="" class="text-blue-600">Bar Counter</a>,
+                                <a href="" class="text-blue-600">Bar Counter</a>,
+                                <a href="" class="text-blue-600">Bar Counter</a>,
+                                <a href="" class="text-blue-600">Bar Counter</a>,
+                                <a href="" class="text-blue-600">Bar Counter</a>,
+                                <a href="" class="text-blue-600">Bar Counter</a>,
+                                <a href="" class="text-blue-600">Bar Counter</a>,
+                                <a href="" class="text-blue-600">Bar Counter</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full border rounded p-2 sm:w-1/2 md:w-1/3">
+                    <div class="flex">
+                        <div>
+                            <i class="fa text-4xl text-success fa-home mx-2"></i>
+                        </div>
+                        <div>
+                            <div> <a href=""
+                                    class="text-3xl font-semibold text-blue-600 hover:text-blue-800">Furniture</a>
+                            </div>
+                            <div>
+                                <a href="" class="text-blue-600">Bar Counter</a>,
+                                <a href="" class="text-blue-600">Bar Counter</a>,
+                                <a href="" class="text-blue-600">Bar Counter</a>,
+                                <a href="" class="text-blue-600">Bar Counter</a>,
+                                <a href="" class="text-blue-600">Bar Counter</a>,
+                                <a href="" class="text-blue-600">Bar Counter</a>,
+                                <a href="" class="text-blue-600">Bar Counter</a>,
+                                <a href="" class="text-blue-600">Bar Counter</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Featured Drawings -->
+        <div class="container mx-auto py-5 md:px-8 lg:px-10">
+            <h1 class="text-4xl ml-6">Featured Drawings</h1>
+            <div class="flex text-center py-5 flex-wrap">
+                <div class="w-full md:w-1/2 lg:w-1/3">
+                    <div class="mx-6 my-5 border shadow-2xl">
+                        <img class="w-full" src="./images/test.jpg" alt="">
+                        <div class="p-4"><a class="text-2xl text-blue-600 hover:text-blue-700" href="">Floor Lamp 3d
+                                Model</a>
+                            <p>AutoCAD drawing of a pantry counter measuring 9’x2’x2’10”(H) showing…</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 lg:w-1/3">
+                    <div class="mx-6 my-5 border shadow-2xl">
+                        <img class="w-full" src="./images/test.jpg" alt="">
+                        <div class="p-4"><a class="text-2xl text-blue-600 hover:text-blue-700" href="">Floor Lamp 3d
+                                Model</a>
+                            <p>AutoCAD drawing of a pantry counter measuring 9’x2’x2’10”(H) showing…</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 lg:w-1/3">
+                    <div class="mx-6 my-5 border shadow-2xl">
+                        <img class="w-full" src="./images/test.jpg" alt="">
+                        <div class="p-4"><a class="text-2xl text-blue-600 hover:text-blue-700" href="">Floor Lamp 3d
+                                Model</a>
+                            <p>AutoCAD drawing of a pantry counter measuring 9’x2’x2’10”(H) showing…</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-right w-full"><button
+                        class="bg-success  my-5 hover:bg-successHover text-white font-semibold py-3 px-12 transition rounded">
+                        Browse More >>
+                    </button></div>
+            </div>
+        </div>
+
+        <!-- Products Buying Guide and Professional Reviews -->
+        <div class="bg-gray-800 text-white py-5 md:px-8 lg:px-10">
+            <h1 class="text-center text-3xl">Products Buying Guide and Professional Reviews</h1>
+            <div class="flex text-center py-5 flex-wrap">
+                <div class="w-full md:w-1/2 lg:w-1/4">
+                    <div class="mx-6 my-5  rounded shadow-2xl">
+                        <img class="w-full" src="./images/test3.jpeg" alt="">
+                        <div class="p-6 bg-white"><a class="text-2xl text-blue-600 hover:text-blue-700" href="">Top 10
+                                Best
+                                Modern Office Guest and Visitor Chairs</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 lg:w-1/4">
+                    <div class="mx-6 my-5  rounded shadow-2xl">
+                        <img class="w-full" src="./images/test3.jpeg" alt="">
+                        <div class="p-6 bg-white"><a class="text-2xl text-blue-600 hover:text-blue-700" href="">Top 10
+                                Best
+                                Modern Office Guest and Visitor Chairs</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 lg:w-1/4">
+                    <div class="mx-6 my-5  rounded shadow-2xl">
+                        <img class="w-full" src="./images/test3.jpeg" alt="">
+                        <div class="p-6 bg-white"><a class="text-2xl text-blue-600 hover:text-blue-700" href="">Top 10
+                                Best
+                                Modern Office Guest and Visitor Chairs</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 lg:w-1/4">
+                    <div class="mx-6 my-5  rounded shadow-2xl">
+                        <img class="w-full" src="./images/test3.jpeg" alt="">
+                        <div class="p-6 bg-white"><a class="text-2xl text-blue-600 hover:text-blue-700" href="">Top 10
+                                Best
+                                Modern Office Guest and Visitor Chairs</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 lg:w-1/4">
+                    <div class="mx-6 my-5  rounded shadow-2xl">
+                        <img class="w-full" src="./images/test3.jpeg" alt="">
+                        <div class="p-6 bg-white"><a class="text-2xl text-blue-600 hover:text-blue-700" href="">Top 10
+                                Best
+                                Modern Office Guest and Visitor Chairs</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 lg:w-1/4">
+                    <div class="mx-6 my-5  rounded shadow-2xl">
+                        <img class="w-full" src="./images/test3.jpeg" alt="">
+                        <div class="p-6 bg-white"><a class="text-2xl text-blue-600 hover:text-blue-700" href="">Top 10
+                                Best
+                                Modern Office Guest and Visitor Chairs</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 lg:w-1/4">
+                    <div class="mx-6 my-5  rounded shadow-2xl">
+                        <img class="w-full" src="./images/test3.jpeg" alt="">
+                        <div class="p-6 bg-white"><a class="text-2xl text-blue-600 hover:text-blue-700" href="">Top 10
+                                Best
+                                Modern Office Guest and Visitor Chairs</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 lg:w-1/4">
+                    <div class="mx-6 my-5  rounded shadow-2xl">
+                        <img class="w-full" src="./images/test3.jpeg" alt="">
+                        <div class="p-6 bg-white"><a class="text-2xl text-blue-600 hover:text-blue-700" href="">Top 10
+                                Best
+                                Modern Office Guest and Visitor Chairs</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-right w-full">
+                <button
+                    class="bg-success  my-5 hover:bg-successHover text-white font-semibold py-3 px-12 transition rounded">
+                    Browse More >>
+                </button>
+            </div>
+        </div>
+
+        <!-- Design Inspirations -->
+        <div class="bg-gray-200">
+            <div class="container lg:w-9/12 mx-auto">
+                <h2 class="text-4xl my-2">Design Inspirations</h2>
+                <hr>
+                <div>
+                    <div class="flex mx-auto my-5">
+                        <div class="w-1/2">
+                            <img src="./images/test2.jpg" alt="">
+                        </div>
+                        <div class="p-6 w-1/2">
+                            <a class="text-3xl text-blue-600 hover:text-blue-700" href="">Top
+                                10
+                                Best
+                                Modern Office Guest and Visitor Chairs</a>
+                            <p class="mt-4">Have you moved in recently? And looking out for ways to decorate the
+                                apartment?
+                                Then you have
+                                stumbled upon the right post. Here you will…</p>
+                            <div class="text-center">
+                                <button
+                                    class="bg-success  my-5 hover:bg-successHover text-white font-semibold py-3 px-12 transition rounded">
+                                    Read More
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="flex mx-auto my-5">
+                        <div class="w-1/2">
+                            <img src="./images/test2.jpg" alt="">
+                        </div>
+                        <div class="p-6 w-1/2">
+                            <a class="text-3xl text-blue-600 hover:text-blue-700" href="">Top
+                                10
+                                Best
+                                Modern Office Guest and Visitor Chairs</a>
+                            <p class="mt-4">Have you moved in recently? And looking out for ways to decorate the
+                                apartment?
+                                Then you have
+                                stumbled upon the right post. Here you will…</p>
+                            <div class="text-center">
+                                <button
+                                    class="bg-success  my-5 hover:bg-successHover text-white font-semibold py-3 px-12 transition rounded">
+                                    Read More
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="flex mx-auto my-5">
+                        <div class="w-1/2">
+                            <img src="./images/test2.jpg" alt="">
+                        </div>
+                        <div class="p-6 w-1/2">
+                            <a class="text-3xl text-blue-600 hover:text-blue-700" href="">Top
+                                10
+                                Best
+                                Modern Office Guest and Visitor Chairs</a>
+                            <p class="mt-4">Have you moved in recently? And looking out for ways to decorate the
+                                apartment?
+                                Then you have
+                                stumbled upon the right post. Here you will…</p>
+                            <div class="text-center">
+                                <button
+                                    class="bg-success  my-5 hover:bg-successHover text-white font-semibold py-3 px-12 transition rounded">
+                                    Read More
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button
+                        class="bg-success  my-5 hover:bg-successHover text-white font-semibold py-3 px-12 transition rounded">
+                        Browse All
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- youtube -->
+
+        <div class="bg-gray-900">
+            <div class="container py-5 text-center  mx-auto">
+                <div class="text-center "><i class="fa text-5xl fa-youtube-play text-red-500 "></i></div>
+                <h2 class="text-4xl text-center text-white">Watch Unlimited design options, and join community of over
+                    90,000 fans
+                </h2>
+                <p>Enjoy and learn while watching videos</p>
+                <div class="flex flex-wrap">
+                    <div class="w-full md:w-1/2">
+                        <div class="m-4 bg-white text-dark">
+                            <div class="w-full">
+                                <iframe class="w-full h-96" src="https://www.youtube.com/embed/DACcyBN5Jng"
+                                    allow="autoplay; encrypted-media" allowFullScreen=""></iframe>
+                            </div>
+                            <div class="p-6 text-center text-dark">
+                                <a class="text-blue-600 text-3xl" href="">
+                                    <h4>Top 50 Latest Indian Modular Kitchen Designs 2018- Plan N Design</h4>
+                                </a>
+                                <p>Here you will find Top 50 latest Indian modern modular kitchen…</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-full md:w-1/2">
+                        <div class="m-4 bg-white text-dark">
+                            <div class="w-full">
+                                <iframe class="w-full h-96" src="https://www.youtube.com/embed/DACcyBN5Jng"
+                                    allow="autoplay; encrypted-media" allowFullScreen=""></iframe>
+                            </div>
+                            <div class="p-6 text-center">
+                                <a class="text-blue-600 text-3xl" href="">
+                                    <h4>Top 50 Latest Indian Modular Kitchen Designs 2018- Plan N Design</h4>
+                                </a>
+                                <p>Here you will find Top 50 latest Indian modern modular kitchen…</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button
+                        class="bg-danger  my-5 hover:bg-successHover text-white font-semibold py-3 px-12 transition rounded">
+                        Watch More
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- footer -->
+
+        <div class="bg-gray-900 text-white py-6">
+            <div class="container mx-auto">
+                <div class="flex flex-wrap">
+                    <div class="w-full md:w-1/2 lg:w-1/4">
+                        <h4 class="text-2xl font-semibold">PRODUCTS</h4>
+                        <hr class="w-1/4 mb-6">
+                        <h4><a class="text-2xl font-semibold" href="">Autocad Drawings</a></h4>
+                        <h4><a class="text-2xl font-semibold" href="">Autocad Drawings</a></h4>
+                        <h4><a class="text-2xl font-semibold" href="">Autocad Drawings</a></h4>
+                        <h4><a class="text-2xl font-semibold" href="">Autocad Drawings</a></h4>
+                        <h4><a class="text-2xl font-semibold" href="">Autocad Drawings</a></h4>
+                    </div>
+                    <div class="w-full md:w-1/2 lg:w-1/4">
+                        <h4 class="text-2xl font-semibold">PRODUCTS</h4>
+                        <hr class="w-1/4 mb-6">
+                        <h4><a class="text-2xl font-semibold" href="">Autocad Drawings</a></h4>
+                        <h4><a class="text-2xl font-semibold" href="">Autocad Drawings</a></h4>
+                        <h4><a class="text-2xl font-semibold" href="">Autocad Drawings</a></h4>
+                        <h4><a class="text-2xl font-semibold" href="">Autocad Drawings</a></h4>
+                        <h4><a class="text-2xl font-semibold" href="">Autocad Drawings</a></h4>
+                    </div>
+                    <div class="w-full md:w-1/2 lg:w-1/4">
+                        <h4 class="text-2xl font-semibold">PRODUCTS</h4>
+                        <hr class="w-1/4 mb-6">
+                        <h4><a class="text-2xl font-semibold" href="">Autocad Drawings</a></h4>
+                        <h4><a class="text-2xl font-semibold" href="">Autocad Drawings</a></h4>
+                        <h4><a class="text-2xl font-semibold" href="">Autocad Drawings</a></h4>
+                        <h4><a class="text-2xl font-semibold" href="">Autocad Drawings</a></h4>
+                        <h4><a class="text-2xl font-semibold" href="">Autocad Drawings</a></h4>
+                    </div>
+                    <div class="w-full md:w-1/2 lg:w-1/4">
+                        <h4 class="text-2xl font-semibold">Follow Us</h4>
+                        <hr class="w-1/4 mb-6">
+                        <div class="bg-white px-3 py-8">
+                            <a class="" href=""><i class="fa text-5xl mx-2 fa-youtube-play text-red-500 "></i></a>
+                            <a class="" href=""><i class="fa text-5xl mx-2 fa-youtube-play text-red-500 "></i></a>
+                            <a class="" href=""><i class="fa text-5xl mx-2 fa-youtube-play text-red-500 "></i></a>
+                            <a class="" href=""><i class="fa text-5xl mx-2 fa-youtube-play text-red-500 "></i></a>
+
+                            <a class="" href=""><i class="fa text-5xl mx-2 fa-youtube-play text-red-500 "></i></a>
+
+                            <a class="" href=""><i class="fa text-5xl mx-3 fa-youtube-play text-red-500 "></i></a>
+                            <a class="" href=""><i class="fa text-5xl mx-3 fa-youtube-play text-red-500 "></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
